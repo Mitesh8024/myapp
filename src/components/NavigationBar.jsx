@@ -1,13 +1,12 @@
 import { Container } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import { AboutUs_Route, Contactus_Route, ROUTE, RegistrationForm_Route,} from "../router/AppRouter";
-import Routers from "../router/AppRouter";
+import { LinkContainer } from "react-router-bootstrap";
+import { useNavigate } from 'react-router-dom'; 
+import { AboutUs_Route, Contactus_Route, ROUTE, RegistrationForm_Route, } from "../router/AppRouter";
 
 export function NavigationBar() {
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
 
     const handleLogout = () => {
         // localStorage.removeItem('token'); // Remove the token from local storage
@@ -42,6 +41,7 @@ export function NavigationBar() {
                        
                     </Nav>
                     <Nav className="ml-auto">
+                    <Nav.Link  href="http://localhost:3000/users/:id/edit" style={{ fontWeight: 'bold' }}>Users</Nav.Link>
                         <Nav.Link href="http://localhost:3000/login" style={{ fontWeight: 'bold' }}>Login</Nav.Link>
                        
                            

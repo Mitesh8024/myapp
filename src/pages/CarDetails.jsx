@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import BookingForm from '../components/BookingForm';

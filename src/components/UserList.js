@@ -21,7 +21,7 @@ const UserList = () => {
   const handleDelete = async (userMail) => {
     try {
       await deleteUser(userMail);
-      // setUsers(users.filter(user => user.id !== userMail));
+     
     } catch (error) {
       console.error('Error deleting user:', error);
     }

@@ -52,19 +52,19 @@
 
 @media (max-width: 1200px) {
   .car-card {
-    width: 400px; /* Adjust width for medium screens */
+    width: 400px; 
   }
 }
 
 @media (max-width: 992px) {
   .car-card {
-    width: 350px; /* Adjust width for smaller screens */
+    width: 350px; 
   }
 }
 
 @media (max-width: 768px) {
   .car-card {
-    width: 100%; /* Full width on small screens */
+    width: 100%; 
     margin: 10px 0;
   }
 }

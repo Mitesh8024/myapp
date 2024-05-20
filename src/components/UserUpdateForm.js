@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getUserById, updateUser } from './service/apiService';
 import { useParams, useNavigate } from 'react-router-dom';
 
+
 const UserUpdateForm = () => {
   const { id } = useParams();
   const navigate = useNavigate();

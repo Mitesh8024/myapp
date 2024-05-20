@@ -18,7 +18,7 @@ import {
 import Car from "./pages/Car";
 import CarDetails from "./pages/CarDetails";
 import PaymentPage from "./pages/PaymentPage";
-import UserList from "./components/UserList"; // Import the UserList component
+import UserList from "./components/UserList"; 
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
         <Route path={Contactus_Route} element={<ContactUs />} />
         <Route path={ROUTE.CAR_DETAILS} element={<CarDetails />} />
         <Route path={ROUTE.PAYMENT} element={<PaymentPage />} />
-        <Route path="/users" element={<UserList />} /> {/* Add route for UserList */}
+        <Route path="/users" element={<UserList />} /> 
         <Route path="/users/:id/edit" element={<UserUpdateForm />} />
       </Routes>
       <Footer />

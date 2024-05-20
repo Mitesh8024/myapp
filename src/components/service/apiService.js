@@ -52,7 +52,7 @@ export const updateUser = async (userId, updatedData) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(updatedData), // updatedData should be a FormData object with the updated fields and the file if any
+            body: JSON.stringify(updatedData),//Updated data is converted into string send to body
         });
         const data = await response.json();
         return data;
@@ -80,7 +80,7 @@ export const deleteUser = async (userMail) => {
         throw error;
     }
 };
-// Add this function to fetch a single user by ID
+
 export const getUserById = async (userId) => {
     try {
         const response = await fetch(`${API_URL}/users/${userId}`);
