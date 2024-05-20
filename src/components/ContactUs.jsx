@@ -4,6 +4,7 @@ import teamMember1 from "../image/team-member1.jpg";
 import teamMember2 from "../image/team-member2.jpg";
 import teamMember3 from "../image/team-member3.jpg";
 
+
 const ContactUs = () => {
   return (
     <div className="team-section">
